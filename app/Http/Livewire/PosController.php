@@ -306,7 +306,7 @@ class PosController extends Component
             $this->itemsQuantity = Cart::getTotalQuantity();
 
             $this->emit('sale-ok', 'Venta registrada con exito');
-            return Redirect::to("ventas/$sale->id");
+            return Redirect::to("http://localhost/?id=$sale->id");
 
         } catch (Exception $e) {
             
